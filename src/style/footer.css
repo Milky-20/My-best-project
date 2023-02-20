@@ -1,0 +1,17 @@
+:root {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body {
+    height: 100vh;
+  }
+  .footer {
+    padding: 60px;
+    background: #2e9aa7;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }

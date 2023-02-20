@@ -1,0 +1,12 @@
+.header{
+  background-color: #2e9aa7;
+  height: 100px;
+  color: #f6d365;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.home{
+  margin-top: 50px;
+}

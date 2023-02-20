@@ -1,0 +1,16 @@
+.card{
+    border: 2px solid gray;
+    height: 300px;
+    width: 300px;
+    margin-left: 750px;
+    margin-bottom: 200px;
+    background: #2e9aa7;
+    color: white;
+    border-radius: 50px;
+   }
+   .card-name{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 70px;
+   }

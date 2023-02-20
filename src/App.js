@@ -1,23 +1,50 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card'
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Main from './components/Main';
+// import cards from './components/Massiv';
+
+const cards = [
+  {
+    number: "1",
+    name: "Story",
+    transcription: "ˈstɔː.ri ",
+    trunslate: "История",
+  },
+  {
+    number: "2",
+    name: "Sea",
+    transcription: " siː ",
+    trunslate: "Море",
+  }
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      {
+        cards.map((itemi) =>
+        <Main
+        number = {itemi.number}
+        name = {itemi.name}
+        transcription = {itemi.transcription}
+        trunslate = {itemi.trunslate}
+        />
+        )
+      }
+   {
+    cards.map((cardi) =>
+    <Card
+    name = {cardi.name}
+    transcription = {cardi.transcription}
+    trunslate = {cardi.trunslate}
+    />
+    )
+   }
+   <Footer/>
     </div>
   );
 }
