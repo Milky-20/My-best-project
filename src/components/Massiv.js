@@ -1,7 +1,16 @@
 const cards = [
-    {
-      name: "Stork",
-      transcription: "Сторк",
-      trunslate: "Аист",
-    }
-  ]
+  {
+    number: "1",
+    name: "Story",
+    transcription: "ˈstɔː.ri ",
+    trunslate: "История",
+  },
+  {
+    number: "2",
+    name: "Sea",
+    transcription: " siː ",
+    trunslate: "Море",
+  }
+]
+
+  export default cards;

@@ -4,40 +4,17 @@ import Card from './components/Card'
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
-// import cards from './components/Massiv';
-
-const cards = [
-  {
-    number: "1",
-    name: "Story",
-    transcription: "ˈstɔː.ri ",
-    trunslate: "История",
-  },
-  {
-    number: "2",
-    name: "Sea",
-    transcription: " siː ",
-    trunslate: "Море",
-  }
-]
+import cards from './components/Massiv';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      {
-        cards.map((itemi) =>
-        <Main
-        number = {itemi.number}
-        name = {itemi.name}
-        transcription = {itemi.transcription}
-        trunslate = {itemi.trunslate}
-        />
-        )
-      }
+      <Main/>
    {
-    cards.map((cardi) =>
+    cards.map((cardi, i) =>
     <Card
+    key = {i}
     name = {cardi.name}
     transcription = {cardi.transcription}
     trunslate = {cardi.trunslate}
