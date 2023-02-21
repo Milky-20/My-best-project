@@ -5,7 +5,7 @@
     margin-left: 750px;
     margin-bottom: 200px;
     background: #2e9aa7;
-    color: white;
+    color: #f6d365;
     border-radius: 50px;
    }
    .card-name{
@@ -13,4 +13,9 @@
     align-items: center;
     justify-content: center; 
     margin-top: 70px;
+   }
+   .card-btn{
+    border-radius: 20px;
+    background: #f6d365;
+    border: #f6d365;
    }

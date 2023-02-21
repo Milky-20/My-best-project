@@ -20,8 +20,9 @@ function Main(props){
 
         <div>
         {
-        cards.map((itemi) =>
+        cards.map((itemi, i) =>
         <List
+        key = {i}
         number = {itemi.number}
         name = {itemi.name}
         transcription = {itemi.transcription}
