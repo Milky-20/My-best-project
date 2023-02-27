@@ -3,10 +3,11 @@
     height: 300px;
     width: 300px;
     margin-left: 750px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     background: #2e9aa7;
     color: #f6d365;
     border-radius: 50px;
+    text-align: center;
    }
    .card-name{
     display: flex;
@@ -18,4 +19,8 @@
     border-radius: 20px;
     background: #f6d365;
     border: #f6d365;
+   }
+
+   .card__btn__back{
+
    }

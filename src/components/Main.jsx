@@ -8,13 +8,13 @@ function Main(props){
 <div className="cards">
 <h1 className="admin__title">Words</h1>
     
-    <div class="card__list">
-        <div class="card__menu">
-          <span class="card__text">№</span>
-          <span class="card__text">Word</span>
-          <span class="card__text">Transcription</span>
-          <span class="card__text">Translation</span>
-          <span class="card__text">Edit</span>
+    <div className="card__list">
+        <div className="card__menu">
+          <th className="card__text">№</th>
+          <th className="card__text">Word</th>
+          <th className="card__text">Transcription</th>
+          <th className="card__text">Translation</th>
+          <th className="card__text">Edit</th>
         </div>
         </div>
 

@@ -1,4 +1,5 @@
 import '../style/main.css'
+import Edit from '../assets/edit.jpg'
 
 function List(props){
     return(
@@ -7,6 +8,7 @@ function List(props){
         <span>{props.name}</span>
         <span>[{props.transcription}]</span>
         <span>{props.trunslate}</span>
+       
         <div className="cl-btn-7"></div>
         </div>
     )

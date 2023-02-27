@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Card from './components/Card'
 import Footer from './components/Footer';
@@ -11,7 +10,7 @@ function App() {
     <div className="App">
       <Header/>
       <Main/>
-   {
+   {/* {
     cards.map((cardi, i) =>
     <Card
     key = {i}
@@ -20,7 +19,8 @@ function App() {
     trunslate = {cardi.trunslate}
     />
     )
-   }
+   } */}
+   <Card/>
    <Footer/>
     </div>
   );
