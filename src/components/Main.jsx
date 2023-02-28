@@ -1,6 +1,6 @@
 import '../style/main.css'
 import cards from './Massiv';
-import List from './List';
+import List from './Table';
 
 function Main(props){
     return(

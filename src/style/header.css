@@ -7,5 +7,10 @@
 }
 
 .allText{
-  margin-top: 50px;
+  display: inline-flex;
+  margin-top: 35px;
+  margin-left: 200px;
+}
+.header_too{
+  margin-left: 300px;
 }
