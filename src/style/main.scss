@@ -1,3 +1,11 @@
+@import './card.scss';
+@import './footer.scss';
+@import './header.scss';
+@import './table.scss';
+
+$bluecollor: #2e9aa7;
+$yellowcollor: #f6d365;
+
 .list {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -6,34 +14,21 @@
     align-items: center;
     text-align: center;
   }
-  
-  .cards {
-    border: 3px solid #f6d365;
+  .main {
+    border: 3px solid $yellowcollor;
     border-radius: 10px;
     min-height: 350px;
     width: 100%;
-    background: #2e9aa7;
-  }
-  
-  
-  .card__menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-   color: #f6d365;
-  }
-  .card__logo {
-    max-width: 30px;
-  }
-  
-  .card__sort {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-  }
-  
-  .card__list {
-    margin-top: 10px;
+    background: $bluecollor;
   }
   .admin__title{
-    color: #f6d365;
+    color: $yellowcollor
   }
-
+  .main__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    color: $yellowcollor
+  }
+  .main__list {
+    margin-top: 10px;
+  }

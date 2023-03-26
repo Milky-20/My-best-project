@@ -1,0 +1,40 @@
+$bluecollor: #2e9aa7;
+$yellowcollor: #f6d365;
+
+.header{
+  display: flex;
+  background-color: #2e9aa7;
+  height: 100px;
+  color: $yellowcollor;
+  font-size: larger;
+  font-weight: bolder;
+}
+.allText{
+  display: inline-flex;
+  margin-top: 35px;
+  margin-left: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  color: $yellowcollor;
+}
+.header_too{
+  margin-left: 300px;
+}
+.header__logo{
+  width: 200px;
+  height: 70px;
+  border-radius: 50px;
+  opacity: 60%;
+  margin-left: 140px;
+  margin-top: 15px;
+}
+.header__logIn{
+  background: $yellowcollor;
+  cursor: pointer;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+  margin-left: 350px;
+  margin-top: 30px;
+  border: none;
+}

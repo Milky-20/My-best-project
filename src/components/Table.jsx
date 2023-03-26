@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Edit from '../assets/edit.jpg'
-import '../style/Table.css'
+import Edit from '../assets/pencil.png';
+import '../style/table.scss'
 
 function List(props){
     const [pressed, setPressed] = useState(false);
@@ -15,10 +15,14 @@ function List(props){
 <span>{props.number}</span>
         {pressed ? (
             <>
-<input className='card__input'></input>
-<input className='card__input'></input>
-<input className='card__input'></input>
+<input className='card__input' value={props.name}></input>
+<input className='card__input' value={props.transcription}></input>
+<input className='card__input' value={props.trunslate}></input>
+<div className='buttons'>
+   <img src={Edit} className='table_btn' onClick={handleChange}></img>
 <div className="cl-btn-7" onClick={handleChange}></div>
+</div>
+
 </>
         ) :
     (  
@@ -26,7 +30,10 @@ function List(props){
     <span>{props.name}</span>
     <span>[{props.transcription}]</span>
     <span>{props.trunslate}</span>
-    <div className="cl-btn-7" onClick={handleChange}></div>
+    <div className='buttons'> 
+    <img src={Edit} className='table_btn' onClick={handleChange}></img>
+    <div className="cl-btn-7" ></div>
+    </div>
     </>
     )}
 </div> )

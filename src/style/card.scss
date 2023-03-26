@@ -1,0 +1,48 @@
+$bluecollor: #2e9aa7;
+$yellowcollor: #f6d365;
+
+.card{
+    border: 2px solid gray;
+    height: 300px;
+    width: 300px;
+    margin-left: 750px;
+    margin-bottom: 100px;
+    background: $bluecollor;
+    color: $yellowcollor;
+    border-radius: 50px;
+    text-align: center;
+   }
+   .card-name{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 50px;
+   }
+   .card-btn{
+    border-radius: 20px;
+    background: $yellowcollor;
+    border: $yellowcollor;
+    cursor: pointer;
+    height: 30px;
+    width: 70px;
+   }
+
+   .card__btn__back{
+    cursor: pointer;
+    background: $yellowcollor;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 70px;
+    margin-left: 500px;
+   }
+   .card__btn__forward{
+    cursor: pointer;
+    background: $yellowcollor;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 70px;
+    margin-left: 700px;
+    margin-bottom: 30px;
+   }

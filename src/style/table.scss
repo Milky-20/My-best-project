@@ -1,3 +1,6 @@
+$bluecollor: #2e9aa7;
+$yellowcollor: #f6d365;
+
 .cl-btn-7 {
     width: 40px;
     height: 40px;
@@ -9,7 +12,7 @@
 }
 .cl-btn-7:before {
     content: '+';
-    color: #f6d365;
+    color: $yellowcollor;
     position: absolute;
     z-index: 2;
     transform: rotate(45deg);
@@ -27,7 +30,7 @@
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    background: #f6d365;
+    background: $yellowcollor;
     z-index: 1;
     transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
     transform: scale(0.01);
@@ -43,11 +46,20 @@
 .card__item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    /* background-color: #f6d365; */
     padding: 5px;
     margin-top: 5px;
   }
   .card__input{
 height: 20px;
 width: 300px;
+margin-left: 30px;
+background-color: $yellowcollor;
+border: none;
   }
+  .buttons{
+    cursor: pointer;
+  }
+.table_btn{
+    width: 25px;
+    height: 25px;
+}

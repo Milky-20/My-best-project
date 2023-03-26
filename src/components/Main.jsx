@@ -1,20 +1,21 @@
-import '../style/main.css'
-import cards from './Massiv';
+import React from 'react';
+import '../style/main.scss'
+import cards from '../utils/massiv';
 import List from './Table';
 
 function Main(props){
     return(
 <div className="list">
-<div className="cards">
+<div className="main">
 <h1 className="admin__title">Words</h1>
-    
-    <div className="card__list">
-        <div className="card__menu">
-          <th className="card__text">№</th>
-          <th className="card__text">Word</th>
-          <th className="card__text">Transcription</th>
-          <th className="card__text">Translation</th>
-          <th className="card__text">Edit</th>
+
+    <div className="main__list">
+        <div className="main__menu">
+          <th className="main__text">№</th>
+          <th className="main__text">Word</th>
+          <th className="main__text">Transcription</th>
+          <th className="main__text">Translation</th>
+          <th className="main__text">Edit</th>
         </div>
         </div>
 
@@ -31,6 +32,7 @@ function Main(props){
         )
       }
         </div>
+
 </div>
 </div>
     )

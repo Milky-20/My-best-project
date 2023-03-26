@@ -1,28 +1,40 @@
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  BrowserRouter
+} from "react-router-dom";
 import './App.css';
-import Card from './components/Card'
+import './style/index.css';
+import Card from './components/Card';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
-import cards from './components/Massiv';
+import List from './components/Table';
+
+
 
 function App() {
   return (
+    <Router>
+      
     <div className="App">
       <Header/>
-      <Main/>
-   {/* {
-    cards.map((cardi, i) =>
-    <Card
-    key = {i}
-    name = {cardi.name}
-    transcription = {cardi.transcription}
-    trunslate = {cardi.trunslate}
-    />
-    )
-   } */}
-   <Card/>
-   <Footer/>
+      <main>
+        <Routes>
+      <Route exact path="/" element={<Main />} />
+      <Route path="/game" element={<Card />} />
+      {/* <Route path="*" element={<Error />} /> */}
+      </Routes>
+      </main>
+      {/* <Main/>
+      <Card/> */}
+      <Footer/>
+
     </div>
+    </Router>
   );
 }
 
