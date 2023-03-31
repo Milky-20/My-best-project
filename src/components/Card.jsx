@@ -5,8 +5,14 @@ import cards from '../utils/massiv.js';
 function Card (props) {
   const [pressed, setPressed] = useState(false);
   const [index, setIndex] = useState(0);
+  const [viewCard, setViewCard] = useState(false);
+
   const handleChange = () => {
       setPressed(!pressed);
+      if(!viewCard) {
+        setViewCard(true);
+        props.onLearned();
+      }
   }
 
 let onecard = cards[index];
@@ -15,12 +21,16 @@ const cardForward = () => {
 if (index + 1 >= cards.length){
   setIndex(0);
 } else  setIndex(index + 1);
+setViewCard(false);
+setPressed(false);
 }
 
 const cardBack = () => {
 if (index - 1 < 0){
   setIndex(cards.length - 1);
 } else setIndex(index - 1);
+setViewCard(false);
+setPressed(false);
 }
 
 return(

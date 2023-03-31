@@ -5,8 +5,9 @@ $yellowcollor: #f6d365;
     border: 2px solid gray;
     height: 300px;
     width: 300px;
-    margin-left: 750px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    // margin-left: 750px;
+    margin-bottom: 150px;
     background: $bluecollor;
     color: $yellowcollor;
     border-radius: 50px;
@@ -45,4 +46,11 @@ $yellowcollor: #f6d365;
     width: 70px;
     margin-left: 700px;
     margin-bottom: 30px;
+   }
+   .learnWords{ 
+    color: $bluecollor;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 100px;
    }
