@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import '../style/card.scss';
 import cards from '../utils/massiv.js';
 
@@ -33,6 +33,11 @@ setViewCard(false);
 setPressed(false);
 }
 
+const ref = useRef();
+useEffect(() => {
+  ref.current.focus();
+}, []);
+
 return(
   <div>
    
@@ -41,7 +46,7 @@ return(
       <div className='card-name'><h2>{onecard.name}</h2></div>  
         <div className='card-transcription'><p>[{onecard.transcription}]</p></div>
        <div><p className='card-trunslate'>{onecard.trunslate}</p></div> 
-       <button className='card-btn' onClick={handleChange}>{pressed ? onecard.trunslate: "Trunslate"}</button>
+       <button className='card-btn' ref={ref} onClick={handleChange}>{pressed ? onecard.trunslate: "Trunslate"}</button>
        </div>
     </div>
      <div>

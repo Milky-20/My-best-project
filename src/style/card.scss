@@ -28,6 +28,11 @@ $yellowcollor: #f6d365;
     width: 70px;
    }
 
+   .card-btn:focus{
+    box-shadow: 0 0 0 3px #dd77aa;
+    outline: none;
+   }
+
    .card__btn__back{
     cursor: pointer;
     background: $yellowcollor;
