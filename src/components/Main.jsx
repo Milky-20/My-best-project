@@ -11,11 +11,11 @@ function Main(props){
 
     <div className="main__list">
         <div className="main__menu">
-          <th className="main__text">№</th>
-          <th className="main__text">Word</th>
-          <th className="main__text">Transcription</th>
-          <th className="main__text">Translation</th>
-          <th className="main__text">Edit</th>
+          <a className="main__text">№</a>
+          <a className="main__text">Word</a>
+          <a className="main__text">Transcription</a>
+          <a className="main__text">Translation</a>
+          <a className="main__text">Edit</a>
         </div>
         </div>
 
@@ -27,7 +27,7 @@ function Main(props){
         number = {itemi.number}
         name = {itemi.name}
         transcription = {itemi.transcription}
-        trunslate = {itemi.trunslate}
+        translate = {itemi.translate}
         />
         )
       }

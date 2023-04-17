@@ -45,7 +45,7 @@ return(
       <div>
       <div className='card-name'><h2>{onecard.name}</h2></div>  
         <div className='card-transcription'><p>[{onecard.transcription}]</p></div>
-       <div><p className='card-trunslate'>{onecard.trunslate}</p></div> 
+       <div><p className='card-trunslate'>{onecard.translate}</p></div> 
        <button className='card-btn' ref={ref} onClick={handleChange}>{pressed ? onecard.trunslate: "Trunslate"}</button>
        </div>
     </div>

@@ -31,7 +31,7 @@ const handleLearned = () => {
       <Route exact path="/" element={<Main />} />
       <Route path="/game" element={
         <>
-         <div className='learnWords'>Words Learned: {learnWords}</div>
+        <div className='learnWords'>Words Learned: {learnWords}</div>
       <Card onLearned={handleLearned}/>
       </>
     } />
