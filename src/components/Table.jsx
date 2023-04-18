@@ -54,13 +54,13 @@ function List(props){
 
         {pressed ? (
             <>
-<p className='card__input'><input value={inputText.name} 
+<p className='card__input'><input value={inputText.name} name="name" 
 className={`card-input ${errorClass(inputText.name)}`} onChange={onChange}></input></p>
 
-<p className='card__input'><input value={inputText.transcription} 
+<p className='card__input'><input value={inputText.transcription}  name="transcription"
 className={`card-input ${errorClass(inputText.transcription)}`} onChange={onChange}></input></p>
 
-<p className='card__input'><input value={inputText.trunslate} 
+<p className='card__input'><input value={inputText.translate}  name="translate"
 className={`card-input ${errorClass(inputText.translate)}`} onChange={onChange}></input></p>
 
 <div className='buttons'>
