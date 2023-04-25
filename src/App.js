@@ -11,8 +11,8 @@ import Card from './components/Card';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
-
-
+import Selection from './components/Selection';
+import { translation, TranslationContext } from './context/TranslationContext';
 
 function App() {
 
@@ -22,10 +22,14 @@ const handleLearned = () => {
   setLearnWords (learnWords + 1);
 }
 
+const [words, setWords] = useState('english');
+
   return (
+    <TranslationContext.Provider value={translation [words]}>
     <Router>
     <div className="App">
       <Header/>
+      <Selection onWordSelect={setWords}/>
       <main>
         <Routes>
       <Route exact path="/" element={<Main />} />
@@ -41,6 +45,7 @@ const handleLearned = () => {
       <Footer/>
     </div>
     </Router>
+    </TranslationContext.Provider>
   );
 }
 

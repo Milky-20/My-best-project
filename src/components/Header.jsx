@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import '../style/header.scss';
 import logo from'../assets/logotip.jpg';
+import {TranslationContext} from '../context/TranslationContext';
 
 function Header (props) {
+  const word = React.useContext(TranslationContext);
 return(
     <div className='header'>
       <Link to='/'><img src = {logo} className= 'header__logo'></img></Link>
@@ -11,7 +13,7 @@ return(
   <Link to='/' className='home allText'>Home</Link>
   <Link to='/game' className='cardes allText'>Cards</Link>
   <Link to='/' className='favorites allText'>Favorites</Link>
-  <Link to='/' className='contact allText'>Contact</Link>
+  <Link to='/' className='contact allText'>{word.title}</Link>
     </nav>
     <button className='header__logIn'>Log in</button>
     </div>
