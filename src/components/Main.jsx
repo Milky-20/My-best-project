@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../style/main.scss'
 import cards from '../utils/massiv';
 import List from './Table';
+import { CollectionWordsContext } from '../context/CollectionWordsContext';
 
 function Main(props){
+  const {isLoading, dictionary} = useContext(CollectionWordsContext);
+  console.log(dictionary);
     return(
 <div className="list">
 <div className="main">
@@ -21,13 +24,13 @@ function Main(props){
 
         <div>
         {
-        cards.map((itemi, i) =>
+        dictionary.map((itemi, i) =>
         <List
         key = {i}
-        number = {itemi.number}
-        name = {itemi.name}
+        number = {itemi.id}
+        name = {itemi.english}
         transcription = {itemi.transcription}
-        translate = {itemi.translate}
+        translate = {itemi.russian}
         />
         )
       }

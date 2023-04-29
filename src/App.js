@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} 
+import {BrowserRouter as Router, Routes, Route,} 
 from "react-router-dom";
 import './App.css';
 import './style/index.css';
@@ -11,8 +7,9 @@ import Card from './components/Card';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
-import Selection from './components/Selection';
-import { translation, TranslationContext } from './context/TranslationContext';
+// import Selection from './components/Selection';
+// import { translation, TranslationContext } from './context/TranslationContext';
+import { CollectionWords } from './context/CollectionWordsContext';
 
 function App() {
 
@@ -22,14 +19,11 @@ const handleLearned = () => {
   setLearnWords (learnWords + 1);
 }
 
-const [words, setWords] = useState('english');
-
   return (
-    <TranslationContext.Provider value={translation [words]}>
+    <CollectionWords>
     <Router>
     <div className="App">
       <Header/>
-      <Selection onWordSelect={setWords}/>
       <main>
         <Routes>
       <Route exact path="/" element={<Main />} />
@@ -45,7 +39,7 @@ const [words, setWords] = useState('english');
       <Footer/>
     </div>
     </Router>
-    </TranslationContext.Provider>
+    </CollectionWords>
   );
 }
 
