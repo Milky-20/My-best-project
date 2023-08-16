@@ -50,6 +50,7 @@ function List(props){
     return(
 
 <div className='card__item' >
+    
 <span>{props.number}</span>
 
         {pressed ? (
