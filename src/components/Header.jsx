@@ -12,7 +12,7 @@ return(
       <nav className='header_too'>
   <Link to='/' className='home allText'>Home</Link>
   <Link to='/game' className='cardes allText'>Cards</Link>
-  <Link to='/' className='favorites allText'>Favorites</Link>
+  <Link to='/favorites' className='favorites allText'>Favorites</Link>
   <Link to='/' className='contact allText'>Contacts</Link>
     </nav>
     <button className='header__logIn'>Log in</button>

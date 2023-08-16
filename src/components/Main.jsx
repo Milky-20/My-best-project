@@ -1,13 +1,15 @@
 import React, { useContext } from 'react';
 import '../style/main.scss'
-import cards from '../utils/massiv';
 import List from './Table';
 import { CollectionWordsContext } from '../context/CollectionWordsContext';
+import AddWord from './AddWord';
 
 function Main(props){
   const {isLoading, dictionary} = useContext(CollectionWordsContext);
   console.log(dictionary);
     return(
+      <div>
+        <AddWord/>
 <div className="list">
 <div className="main">
 <h1 className="admin__title">Words</h1>
@@ -36,6 +38,7 @@ function Main(props){
       }
         </div>
 
+</div>
 </div>
 </div>
     )
